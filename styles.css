@@ -1,0 +1,168 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdf4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.header .logo img {
+    width: 120px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url('images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    background-color: #f44336;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.hero .cta-button:hover {
+    background-color: #e31c1c;
+}
+
+/* Footer */
+.footer {
+
+background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .social-media a {
+    color: rgb(253, 178, 178);
+    text-decoration: none;
+    margin: 0 10px;
+}s
+
+.footer .social-media a:hover {
+    text-decoration: underline;
+}
+
+/* About, Services, Contact sections */
+.about, .services, .contact {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.service-card {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    background-color: #fa8282;
+    padding: 20px;
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+/* Success Message Styling */
+.success-message {
+    background-color: #4CAF50;
+    color: rgb(250, 168, 168);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    z-index: 999;
+}
+/* Accordion style for services */
+.service-card.active {
+    background-color: #f8c5c5;
+    border-color: #ff0000;
+    transition: 0.3s ease;
+}
+
+.service-card {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Accordion style for services */
+.service-card.active {
+    background-color: #f4f4f4;
+    border-color: #333;
+    transition: 0.3s ease;
+}
+
+.service-card {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
